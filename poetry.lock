@@ -32,7 +32,7 @@ visualize = ["graphviz (>0.5.1)", "Twisted (>=16.1.1)"]
 name = "binaryornot"
 version = "0.4.4"
 description = "Ultra-lightweight pure Python package to check if a file is binary or text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -74,7 +74,7 @@ python-versions = ">=3.7"
 name = "boolean.py"
 version = "4.0"
 description = "Define boolean algebras, create and parse boolean expressions and create custom boolean DSL."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -100,7 +100,7 @@ virtualenv = ["virtualenv (>=20.0.35)"]
 
 [[package]]
 name = "cachecontrol"
-version = "0.12.12"
+version = "0.12.13"
 description = "httplib2 caching for requests"
 category = "dev"
 optional = false
@@ -138,7 +138,7 @@ pycparser = "*"
 name = "chardet"
 version = "5.1.0"
 description = "Universal encoding detector for Python 3"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -439,7 +439,7 @@ trio = ["trio", "async-generator"]
 name = "jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -492,7 +492,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 name = "license-expression"
 version = "30.1.1"
 description = "license-expression is a comprehensive utility library to parse, compare, simplify and normalize license expressions (such as SPDX license expressions) using boolean logic."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -515,7 +515,7 @@ python-versions = "*"
 name = "markupsafe"
 version = "2.1.3"
 description = "Safely add untrusted strings to HTML/XML markup."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -791,7 +791,7 @@ testing = ["fields", "hunter", "process-tests", "six", "pytest-xdist", "virtuale
 name = "python-debian"
 version = "0.1.49"
 description = "Debian package related modules"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -858,7 +858,7 @@ requests = ">=2.0.1,<3.0.0"
 name = "reuse"
 version = "1.1.2"
 description = "reuse is a tool for compliance with the REUSE recommendations."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.2,<4.0.0"
 
@@ -1086,7 +1086,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "8c0abf0b1ca4b36580145fe0d06dea578f62850ea2f5d81f03f34c5e35b212ba"
+content-hash = "d24578df418eeb9ea56eb3e71f3854c2fa5fbaf5d156a709a8500c17c827779a"
 
 [metadata.files]
 attrs = [
@@ -1141,8 +1141,8 @@ build = [
     {file = "build-0.10.0.tar.gz", hash = "sha256:d5b71264afdb5951d6704482aac78de887c80691c52b88a9ad195983ca2c9269"},
 ]
 cachecontrol = [
-    {file = "CacheControl-0.12.12-py2.py3-none-any.whl", hash = "sha256:5986a16897cd296bdb7b86b42e0403c4ca30b9875f0e0c7c8e509b50cff115b7"},
-    {file = "CacheControl-0.12.12.tar.gz", hash = "sha256:9c2e5208ea76ebd9921176569743ddf6d7f3bb4188dbf61806f0f8fc48ecad38"},
+    {file = "CacheControl-0.12.13-py2.py3-none-any.whl", hash = "sha256:431fc10c5ab1a1589ce08c05b948abac31c0f76962d5fc9efab9da280c9790aa"},
+    {file = "CacheControl-0.12.13.tar.gz", hash = "sha256:e28ab6c7b57ff53a7f9a6a8431fff021fb7437794ec581884773610bb8ce3f82"},
 ]
 certifi = [
     {file = "certifi-2023.5.7-py3-none-any.whl", hash = "sha256:c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716"},
