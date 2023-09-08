@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
 
+import typing
+
 from .base import BASE_URL, SCHEMA_URL, KoscheiMessage
 
 
@@ -14,7 +16,7 @@ class PackageStateChange(KoscheiMessage):
 
     topic = "koschei.package.state.change"
 
-    body_schema = {
+    body_schema: typing.ClassVar = {
         "id": SCHEMA_URL + topic,
         "$schema": "http://json-schema.org/draft-04/schema#",
         "description": "Schema for messages sent when a new thing is created",
