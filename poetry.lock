@@ -1576,21 +1576,23 @@ requests = ">=2.0.1,<3.0.0"
 
 [[package]]
 name = "reuse"
-version = "3.0.2"
+version = "4.0.3"
 description = "reuse is a tool for compliance with the REUSE recommendations."
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "reuse-3.0.2-cp311-cp311-manylinux_2_36_x86_64.whl", hash = "sha256:bf5a65c2dba4b481ee5ace18a3863095ee95ff3e72acaf6cd4446bb83d786970"},
-    {file = "reuse-3.0.2.tar.gz", hash = "sha256:73eb8262b84527a90822404e7504f69081854759806830d402ea1e92176f32a6"},
+    {file = "reuse-4.0.3-cp311-cp311-manylinux_2_36_x86_64.whl", hash = "sha256:b33e26ec1d105cfcfc2e904d103faec0d758994278feb95a4f4290a864562243"},
+    {file = "reuse-4.0.3.tar.gz", hash = "sha256:4f2c3e1213ec644e5febc50d8322d18982e4e1102af8a51d9493bfc2164a0eac"},
 ]
 
 [package.dependencies]
-binaryornot = ">=0.4.4,<0.5.0"
+attrs = ">=21.3"
+binaryornot = ">=0.4.4"
 "boolean.py" = ">=3.8"
-Jinja2 = ">=3.0.0,<4.0.0"
+Jinja2 = ">=3.0.0"
 license-expression = ">=1.0"
-python-debian = ">=0.1.34,<0.1.45 || >0.1.45,<0.1.46 || >0.1.46,<0.1.47 || >0.1.47,<0.2.0"
+python-debian = ">=0.1.34,<0.1.45 || >0.1.45,<0.1.46 || >0.1.46,<0.1.47 || >0.1.47"
+tomlkit = ">=0.8"
 
 [[package]]
 name = "rpds-py"
@@ -2176,4 +2178,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "322e3d9021c76aa7d8f237da8f244a18d08f68f21cb4db32d6b857b4b4a14d19"
+content-hash = "f9735f655bd3db5edb618d4ebd9b53157e8cf7a085a100e8aada4d287058d933"
