@@ -3,7 +3,17 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 
 name: CI
-on: [push, pull_request, workflow_dispatch]
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - main
+
 jobs:
 
   tests:
