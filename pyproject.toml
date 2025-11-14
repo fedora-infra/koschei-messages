@@ -2,33 +2,36 @@
 #
 # SPDX-License-Identifier: GPL-2.0-or-later
 
-[tool.poetry]
+[project]
 name = "koschei-messages"
 version = "1.0.1"
 description = "A schema package for messages sent by Koschei"
-authors = ["Fedora Infrastructure Team <infrastructure@lists.fedoraproject.org>"]
 license = "GPLv2-or-later"
 readme = "README.md"
+requires-python = ">=3.9,<4.0"
+authors = [{name = "Fedora Infrastructure Team", email = "infrastructure@lists.fedoraproject.org"}]
+keywords = ["fedora-messaging"]
+dynamic = ["classifiers"]
+dependencies = [
+    "fedora-messaging (>=3.3.0,<4.0.0)",
+]
+
+[project.urls]
 homepage = "https://github.com/fedora-infra/koschei-messages"
 repository = "https://github.com/fedora-infra/koschei-messages"
-keywords = ["fedora-messaging"]
+
+[project.entry-points."fedora.messages"]
+"koschei.package.state.change" = "koschei_messages.package:PackageStateChange"
+"koschei.collection.state.change" = "koschei_messages.collection:CollectionStateChange"
+
+[tool.poetry]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: System Administrators",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
     "Operating System :: POSIX :: Linux",
     "Topic :: Communications",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-
-[tool.poetry.dependencies]
-python = "^3.9"
-fedora-messaging = "^3.3.0"
 
 [tool.poetry.group.dev.dependencies]
 poetry = "^1.2.0-beta.2 || ^2.0.0"
@@ -38,10 +41,6 @@ pytest-cov = ">=3.0.0"
 ruff = ">=0.0.253"
 reuse = "^1.1.2 || ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
 coverage = {extras = ["toml"], version = "^7.2.7"}
-
-[tool.poetry.plugins."fedora.messages"]
-"koschei.package.state.change" = "koschei_messages.package:PackageStateChange"
-"koschei.collection.state.change" = "koschei_messages.collection:CollectionStateChange"
 
 [tool.black]
 line-length = 100
